@@ -1,0 +1,39 @@
+// WhileTest ENTERPRISE EDITION v1.16.2
+// Copyright (C) 1977
+// Language: WHILE for VAX-11/780
+// By Spencer Sellers
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+foo := 5;
+bar_1 := 1;
+while (bar_1 = 1 and true) do (
+    foo := foo + 1; // increment foo
+    bar_1 := foo - 1; // nevermind, we want foo
+    if (not false and not true) then (
+        // Maybe foo should be this?
+        foo := 5
+    ) else (
+        foo := 3 * 7;
+        myvar := (3) + foo - 7 * (((bar_1 + 2))) // it is simple
+    )
+);
+// TODO explain
+myvar2 := (7 + (7 * 8) - (1 + 1 + 1));
+
+// Whitespace sux
+q:=3+2-(5)*2;while(1<=2)do(f:=2)
+
+
+// End of file

@@ -1,0 +1,25 @@
+f := 2 * 3;
+// this is a comment
+if (a <= b) then (
+    d := 1; 
+    if (a <= b) then (
+        if (a <= b) then (
+            if (a <= b) then (
+                d := 2 
+            ) else (
+                d := 3 
+            )
+        ) else (
+            d := 4
+        )
+    // this is a comment
+    ) else (
+        d := 5
+    )
+) else (
+    e := 2  // this is a comment
+);
+while (f = e) do (
+    f:=4
+)
+
